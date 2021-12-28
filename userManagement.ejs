@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- my css files -->
+    <link rel="stylesheet" href="/userManagement.css">
+
+    
+    <title>회원정보 변경</title>
+
+</head>
+
+<body>
+    <% include header.ejs %> 
+    <!-- 헤더파일 따로 만들고 인클루드시킴  -->
+    
+
+    <div class="x-container">
+        <div class="nav-menu-wrap"><div class="nav-menu-content">회원정보 수정</div></div>
+        <div class="content">
+            
+            <div class="join-form-wrap">
+                
+                <div class="join-form">
+                    
+                    <div class="tab-content">
+                        
+                        <div class="input-info">
+                            <div class="info-wrap">
+                                <div class="menu-info"><span>사용자 이메일</span></div>
+                                <div id="info">
+                                    <div class="current-info-wrap">
+                                        <div class="current-info"><span id="current-email"></span></div>
+                                    </div>
+                                    <div class="change-info">
+                                        <input class="input-user-account" type="text" id="input-user-account" value="" placeholder="변경할 이메일 입력">
+                                        <button class="btn-delete-text"><i class="fas fa-times-circle delete-icon"></i></button>
+                                        <button id="btn-email-change">변경</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-wrap var">
+                                <div class="menu-info"><span>사용자 아이디</span></div>
+                                <div id="info">
+                                    <div class="current-info-wrap joinout">
+                                        <div class="current-info"><span id="current-id"></span></div>
+                                        <div id="rank"></div>
+                                        <button id="btn-join-out">회원탈퇴</button>
+                                    </div>
+                                    <div class="change-info">
+                                        <input class="input-user-account" type="text" id="input-user-account" value="" placeholder="변경할 아이디 입력">
+                                        <button class="btn-delete-text"><i class="fas fa-times-circle delete-icon"></i></button>
+                                        <button id="btn-account-change">변경</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-wrap var">
+                                <div class="menu-info"><span>사용자 비밀번호</span></div>
+                                <div id="info">
+                                    <div class="current-info-wrap">
+                                        <input class="input-user-account" type="text" id="input-user-pwd" value="" placeholder="현재 비밀번호 입력">
+                                    </div>
+                                    <div class="change-info pwd">
+                                        
+                                        <div class="pwd-wrap">
+                                            <input class="input-user-account" type="text" id="input-user-newpwd" value="" placeholder="변경할 비밀번호 입력">
+                                            <button class="btn-delete-text"><i class="fas fa-times-circle delete-icon"></i></button>
+                                            <button id="btn-password-change">변경</button>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <!-- jquery js file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- my js files -->
+    <script src="/data-validation.js"></script>
+    <script src="/userManagement.js"></script>
+    
+
+</body>
+
+</html>
